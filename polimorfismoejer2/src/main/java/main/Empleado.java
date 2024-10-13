@@ -2,7 +2,7 @@ package main;
 
 public class Empleado {
     private String nombre;
-    private double apellidos;
+    private String apellidos;
     private int dni;
     private String direccion;
 
@@ -12,7 +12,7 @@ public class Empleado {
 
     private Empleado supervisor;
 
-    public Empleado(String nombre, double apellidos, int dni, String direccion, int anyosAntiguedad, String telefono, double salario) {
+    public Empleado(String nombre, String apellidos, int dni, String direccion, int anyosAntiguedad, String telefono, double salario) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.dni = dni;
@@ -71,11 +71,11 @@ public class Empleado {
         return dni;
     }
 
-    public void setApellidos(double apellidos) {
+    public void setApellidos(String apellidos) {
         this.apellidos = apellidos;
     }
 
-    public double getApellidos() {
+    public String getApellidos() {
         return apellidos;
     }
 

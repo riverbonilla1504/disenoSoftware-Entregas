@@ -10,7 +10,7 @@ public class Vendedor extends Empleado {
     private double comision;
 
 
-    public Vendedor(String nombre, double apellidos, int dni, String direccion, int anyosAntiguedad, String telefono, double salario, String areaVenta, double comision) {
+    public Vendedor(String nombre, String apellidos, int dni, String direccion, int anyosAntiguedad, String telefono, double salario, String areaVenta, double comision) {
         super(nombre, apellidos, dni, direccion, anyosAntiguedad, telefono, salario);
         this.areaVenta = areaVenta;
         this.comision = comision;
@@ -66,6 +66,8 @@ public class Vendedor extends Empleado {
                 ", comision=" + comision +
                 '}';
     }
+
+    
 
 
 
